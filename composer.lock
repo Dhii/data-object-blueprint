@@ -1,0 +1,68 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "75976e8f7b7bb3d28d0c1c109b8830aa",
+    "content-hash": "a7149093e050cb005feb46cbfbf1a435",
+    "packages": [
+        {
+            "name": "dhii/blueprint",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dhii/blueprint.git",
+                "reference": "9297e3a0a3f6b715194ca55ba00a47806d6e96db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dhii/blueprint/zipball/9297e3a0a3f6b715194ca55ba00a47806d6e96db",
+                "reference": "9297e3a0a3f6b715194ca55ba00a47806d6e96db",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhii\\Blueprint\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Miguel Muscat",
+                    "email": "miguelmuscat93@gmail.com"
+                },
+                {
+                    "name": "Anton Ukhanev",
+                    "email": "xedin.unknown@gmail.com"
+                }
+            ],
+            "description": "A standard library for the blueprint-builder design pattern.",
+            "keywords": [
+                "blueprint",
+                "builder"
+            ],
+            "support": {
+                "source": "https://github.com/Dhii/blueprint/tree/master",
+                "issues": "https://github.com/Dhii/blueprint/issues"
+            },
+            "time": "2016-07-15 17:11:22"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.3.0"
+    },
+    "platform-dev": []
+}
