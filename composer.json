@@ -1,0 +1,26 @@
+{
+    "name": "dhii/data-object-blueprint",
+    "description": "A blueprint implementation using data-object.",
+    "keywords": ["data", "object", "blueprint"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Miguel Muscat",
+            "email": "miguelmuscat93@gmail.com"
+        },
+        {
+            "name": "Anton Ukhanev",
+            "email": "xedin.unknown@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Dhii/blueprint"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "dhii/blueprint": "~0.1"
+    }
+}
