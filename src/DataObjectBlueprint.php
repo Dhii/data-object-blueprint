@@ -2,9 +2,8 @@
 
 namespace Dhii\Blueprint;
 
-use \Dhii\Blueprint\BlueprintInterface;
-use \Dhii\Data\Object\ReadInterface;
-use \Dhii\Data\Object\WriteInterface;
+use Dhii\Data\Object\ReadInterface;
+use Dhii\Data\Object\WriteInterface;
 
 /**
  * A blueprint implementation that uses an internal data set to manage build data.
@@ -13,14 +12,13 @@ use \Dhii\Data\Object\WriteInterface;
  */
 class DataObjectBlueprint implements BlueprintInterface, ReadInterface, WriteInterface
 {
-    
     /**
      * The internal data set.
      * 
      * @var array
      */
     protected $data;
-    
+
     /**
      * Constructs a new instance.
      */
@@ -28,7 +26,7 @@ class DataObjectBlueprint implements BlueprintInterface, ReadInterface, WriteInt
     {
         $this->unsData();
     }
-    
+
     /**
      * {@inheritdoc}
      */
@@ -38,46 +36,48 @@ class DataObjectBlueprint implements BlueprintInterface, ReadInterface, WriteInt
     }
 
     /**
-     * {@inheritdoc)
+     * {@inheritdoc).
      */
     public function getData($key = null, $default = null)
     {
         if (is_null($key)) {
             return $this->data;
         }
+
         return $this->hasData($key)
             ? $this->data[$key]
             : $default;
     }
-    
+
     /**
-     * {@inheritdoc)
+     * {@inheritdoc).
      */
     public function hasData($key = null)
     {
         return (is_null($key) && !empty($this->data)) || isset($this->data[$key]);
     }
-    
+
     /**
-     * {@inheritdoc)
+     * {@inheritdoc).
      */
     public function setData($key, $value = null)
     {
         $this->data[$key] = $value;
+
         return $this;
     }
-    
+
     /**
-     * {@inheritdoc)
+     * {@inheritdoc).
      */
     public function unsData($key = null)
     {
         if (is_null($key)) {
-            $this->data = [];
+            $this->data = array();
         } else {
             unset($this->data[$key]);
         }
+
         return $this;
     }
-
 }
