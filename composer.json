@@ -17,11 +17,19 @@
         {
             "type": "vcs",
             "url": "https://github.com/Dhii/blueprint"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Dhii/php-cs-fixer-config"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.0",
         "dhii/blueprint": "~0.1"
+    },
+    "require-dev": {
+        "dhii/php-cs-fixer-config": "dev-master"
     },
     "autoload": {
         "psr-4": {"Dhii\\Blueprint\\": "src/"}
