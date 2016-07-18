@@ -20,13 +20,27 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/Dhii/data-object-interface-read"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Dhii/data-object-interface-write"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Dhii/stringable-interface"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/Dhii/php-cs-fixer-config"
         }
     ],
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.0",
-        "dhii/blueprint": "~0.1"
+        "dhii/blueprint": "~0.1",
+        "dhii/data-object-interface-read": "dev-master",
+        "dhii/data-object-interface-write": "dev-master"
     },
     "require-dev": {
         "dhii/php-cs-fixer-config": "dev-master"

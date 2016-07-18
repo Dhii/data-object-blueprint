@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "501ab5f85b645a12f81d2ce7f71bb82a",
-    "content-hash": "4dec35c2c25f9a218262a2482c3387f2",
+    "hash": "fd564569f92659caf9289838d55cd361",
+    "content-hash": "3a498606f967e5c79ae8a84bf14e350c",
     "packages": [
         {
             "name": "dhii/blueprint",
@@ -53,6 +53,129 @@
                 "issues": "https://github.com/Dhii/blueprint/issues"
             },
             "time": "2016-07-15 17:11:22"
+        },
+        {
+            "name": "dhii/data-object-interface-read",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dhii/data-object-interface-read.git",
+                "reference": "ae87fc0b2337e7622e8c76d8b8ff56c721f270b9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dhii/data-object-interface-read/zipball/ae87fc0b2337e7622e8c76d8b8ff56c721f270b9",
+                "reference": "ae87fc0b2337e7622e8c76d8b8ff56c721f270b9",
+                "shasum": ""
+            },
+            "require": {
+                "dhii/stringable-interface": "dev-master"
+            },
+            "require-dev": {
+                "dhii/php-cs-fixer-config": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhii\\Data\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dhii Team",
+                    "email": "development@dhii.co"
+                }
+            ],
+            "description": "The read interfaces of Data Object",
+            "support": {
+                "source": "https://github.com/Dhii/data-object-interface-read/tree/master",
+                "issues": "https://github.com/Dhii/data-object-interface-read/issues"
+            },
+            "time": "2016-07-10 02:56:46"
+        },
+        {
+            "name": "dhii/data-object-interface-write",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dhii/data-object-interface-write.git",
+                "reference": "1555c5ca2de4a5a9f55a1d650229913fd2d72e89"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dhii/data-object-interface-write/zipball/1555c5ca2de4a5a9f55a1d650229913fd2d72e89",
+                "reference": "1555c5ca2de4a5a9f55a1d650229913fd2d72e89",
+                "shasum": ""
+            },
+            "require": {
+                "dhii/stringable-interface": "dev-master"
+            },
+            "require-dev": {
+                "dhii/php-cs-fixer-config": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhii\\Data\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dhii Team",
+                    "email": "development@dhii.co"
+                }
+            ],
+            "description": "The write interfaces of Data Object",
+            "support": {
+                "source": "https://github.com/Dhii/data-object-interface-write/tree/master",
+                "issues": "https://github.com/Dhii/data-object-interface-write/issues"
+            },
+            "time": "2016-07-16 16:39:31"
+        },
+        {
+            "name": "dhii/stringable-interface",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dhii/stringable-interface.git",
+                "reference": "534f7600e3c197c7ce5d0acc0cf8e14fe26480d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dhii/stringable-interface/zipball/534f7600e3c197c7ce5d0acc0cf8e14fe26480d5",
+                "reference": "534f7600e3c197c7ce5d0acc0cf8e14fe26480d5",
+                "shasum": ""
+            },
+            "require-dev": {
+                "dhii/php-cs-fixer-config": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhii\\Util\\String\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dhii Team",
+                    "email": "development@dhii.co"
+                }
+            ],
+            "description": "An interface that represents the contract which requires the implementation of the `__toString()` method.",
+            "support": {
+                "source": "https://github.com/Dhii/stringable-interface/tree/master",
+                "issues": "https://github.com/Dhii/stringable-interface/issues"
+            },
+            "time": "2016-07-10 02:52:32"
         }
     ],
     "packages-dev": [
@@ -587,6 +710,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "dhii/data-object-interface-read": 20,
+        "dhii/data-object-interface-write": 20,
         "dhii/php-cs-fixer-config": 20
     },
     "prefer-stable": false,
