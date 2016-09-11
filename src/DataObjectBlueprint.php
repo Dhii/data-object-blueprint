@@ -14,7 +14,7 @@ class DataObjectBlueprint implements BlueprintInterface, ReadInterface, WriteInt
 {
     /**
      * The internal data set.
-     * 
+     *
      * @var array
      */
     protected $data;
@@ -73,7 +73,7 @@ class DataObjectBlueprint implements BlueprintInterface, ReadInterface, WriteInt
     public function unsData($key = null)
     {
         if (is_null($key)) {
-            $this->data = array();
+            $this->data = [];
         } else {
             unset($this->data[$key]);
         }
