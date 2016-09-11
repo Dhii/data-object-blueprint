@@ -38,7 +38,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": "^5.3.9",
-        "dhii/blueprint": "~0.1",
+        "dhii/blueprint": "^0.1",
         "dhii/data-object-interface-read": "dev-master",
         "dhii/data-object-interface-write": "dev-master"
     },
