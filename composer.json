@@ -47,5 +47,8 @@
     },
     "autoload": {
         "psr-4": {"Dhii\\Blueprint\\": "src/"}
+    },
+    "config": {
+        "bin-dir": "bin"
     }
 }
